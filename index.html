@@ -77,17 +77,30 @@
             text-transform: uppercase;
         }
 
-        /* 3-Column Fee Grid */
-        .govuk-grid {
+        /* Forced 4-Column Row Grid Layout */
+        .govuk-grid-4col {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(4, 1fr); /* Forces 4 cards in a single line */
+            gap: 20px;
             margin: 35px 0;
         }
+        
+        /* Responsive fallback to avoid horizontal overflow on screens below 800px */
+        @media (max-width: 800px) {
+            .govuk-grid-4col {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .govuk-grid-4col {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .govuk-card {
             border: 1px solid #bfc1c3;
             background: #f3f2f1;
-            padding: 25px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -151,7 +164,7 @@
                 <p style="margin-bottom: 0;">Register your environmental assets, measure your resource independence, and unlock future development opportunities.</p>
             </div>
             
-            <a href="https://forms.gle/98Uy9s73VCBb2rdW8" class="govuk-button" style="margin-bottom: 40px;">Register My Assets</a>
+            <a href="https://forms.gle/TLneLXJkDMKMTDA99" class="govuk-button" style="margin-bottom: 40px;">Register My Assets</a>
 
             <!-- SECTION 2: THE HIDDEN PROBLEM -->
             <h2>1. The Hidden Problem</h2>
@@ -163,26 +176,26 @@
             <p style="font-size: 19px; padding-left: 20px; margin-bottom: 20px;">✓ Energy Efficiency Projects</p>
             <p>But most organizations never document, classify, or track the value they have already created.</p>
 
-            <!-- SECTION 3: THE ATMANIRBHAR FRAMEWORK -->
+            <!-- SECTION 3: THE ATMANIRBHAR FRAMEWORK (FORCED 4 CARDS IN A SINGLE LINE) -->
             <h2>2. Four Pillars of Resource Independence</h2>
             <p>We help you track, classify, and grow your achievements across four simple areas:</p>
             
-            <div class="govuk-grid" style="margin-bottom: 40px;">
+            <div class="govuk-grid-4col">
                 <div class="govuk-card">
                     <h3>⚡ Energy</h3>
-                    <p style="font-size: 16px; margin-bottom: 0;">Generate and save energy through renewable and efficient systems.</p>
+                    <p style="font-size: 15px; margin-bottom: 0;">Generate and save energy through renewable and efficient systems.</p>
                 </div>
                 <div class="govuk-card">
                     <h3>💧 Water</h3>
-                    <p style="font-size: 16px; margin-bottom: 0;">Capture, conserve, recycle and reuse water resources.</p>
+                    <p style="font-size: 15px; margin-bottom: 0;">Capture, conserve, recycle and reuse water resources.</p>
                 </div>
                 <div class="govuk-card">
                     <h3>♻️ Waste</h3>
-                    <p style="font-size: 16px; margin-bottom: 0;">Convert waste streams into valuable resources.</p>
+                    <p style="font-size: 15px; margin-bottom: 0;">Convert waste streams into valuable resources.</p>
                 </div>
                 <div class="govuk-card">
                     <h3>🌱 Nature</h3>
-                    <p style="font-size: 16px; margin-bottom: 0;">Protect and grow natural assets through trees and biodiversity.</p>
+                    <p style="font-size: 15px; margin-bottom: 0;">Protect and grow natural assets through trees and biodiversity.</p>
                 </div>
             </div>
 
@@ -206,9 +219,9 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 5: REGISTRATION & DEVELOPMENT FEES -->
+            <!-- SECTION 5: REGISTRATION & DEVELOPMENT FEES (WITH UPDATED PROGRAM DESCRIPTION) -->
             <h2>4. Registration & Development Fees</h2>
-            <p>Development-ready assets may qualify for advanced growth paths. Fees apply only after review and classification:</p>
+            <p>Development-ready assets may qualify for advanced growth paths. Includes 12 months of registry participation, asset tracking and development screening. Fees apply only after review and classification:</p>
             
             <table class="govuk-table">
                 <thead>
@@ -226,33 +239,33 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 6: LIVE IMPACT TRACKER -->
+            <!-- SECTION 6: LIVE IMPACT TRACKER (FORCED 4 CARDS IN A SINGLE LINE) -->
             <h2>5. Live Impact Tracker</h2>
             <p>Building 100 Million Tons By 2030 together with asset owners across the country:</p>
             
-            <div class="govuk-grid" style="margin-bottom: 40px;">
+            <div class="govuk-grid-4col">
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 36px; margin-bottom: 5px; color: #00703c;">1,000+</div>
-                        <h3>Registered Assets</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1,000+</div>
+                        <h3 style="font-size: 16px;">Registered Assets</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 36px; margin-bottom: 5px; color: #00703c;">250+</div>
-                        <h3>Participating Organizations</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">250+</div>
+                        <h3 style="font-size: 16px;">Participating Organizations</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 36px; margin-bottom: 5px; color: #00703c;">500,000+</div>
-                        <h3>CER Pipeline</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">500,000+</div>
+                        <h3 style="font-size: 16px;">CER Pipeline</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 36px; margin-bottom: 5px; color: #00703c;">1</div>
-                        <h3>Countries Represented</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1</div>
+                        <h3 style="font-size: 16px;">Countries Represented</h3>
                     </div>
                 </div>
             </div>
@@ -271,7 +284,7 @@
 
             <h2>7. Ready To Register Your Environmental Assets?</h2>
             <p>Take two minutes to claim your spot in the national movement and secure your project documentation.</p>
-            <a href="https://forms.gle/98Uy9s73VCBb2rdW8" class="govuk-button" style="margin-top: 10px;">Start Free Asset Registration</a>
+            <a href="https://forms.gle/TLneLXJkDMKMTDA99" class="govuk-button" style="margin-top: 10px;">Start Free Asset Registration</a>
         </main>
 
         <footer>
