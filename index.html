@@ -120,6 +120,28 @@
             color: #0b0c0c;
         }
 
+        /* Progress Bar Styles */
+        .progress-wrapper {
+            margin: 25px 0 40px 0;
+            background-color: #f3f2f1;
+            border: 4px solid #00703c;
+            padding: 20px;
+        }
+        .progress-container {
+            background: #e2e8f0;
+            border-radius: 20px;
+            height: 24px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 10px;
+        }
+        .progress-bar {
+            width: 17%; 
+            background: linear-gradient(90deg, #2d6a4f 0%, #40916c 100%);
+            height: 100%;
+            border-radius: 20px;
+        }
+
         /* GOV.UK Green Action Button */
         .govuk-button {
             background-color: #00703c;
@@ -173,11 +195,11 @@
             <h1>Stop Letting Valuable Resource Assets Go Unrecognized</h1>
             
             <div class="govuk-banner">
-                <h3 style="color: #003020;">Energy. Water. Waste. Nature.</h3>
+                <h3 style="color: #003020;">Solar. Water. Waste. Nature.</h3>
                 <p style="margin-bottom: 0;">Register your environmental assets, measure your resource independence, and unlock future development opportunities.</p>
             </div>
             
-            <a href="https://forms.gle/x1zLpepRCAyr39G49" class="govuk-button" style="margin-bottom: 40px;">Register My Assets</a>
+            <a href="https://forms.gle/TLneLXJkDMKMTDA99" class="govuk-button" style="margin-bottom: 40px;">Register My Assets</a>
 
             <!-- SECTION 2: THE HIDDEN PROBLEM -->
             <h2>1. The Hidden Problem</h2>
@@ -212,70 +234,51 @@
                 </div>
             </div>
 
-            <!-- SECTION 4: DEVELOPMENT PATHWAY -->
-            <h2>3. Development Pathway</h2>
-            <p>Every asset begins with registration. Once you register, your project is mapped onto an official growth path based on its carbon saving potential:</p>
+            <!-- SECTION 4 & 5: MERGED PATHWAYS & FEES -->
+            <h2>3. Registry Development Pathways</h2>
+            <p>Every asset begins with registration. Once you register, your project is mapped onto an official growth path based on its carbon saving potential. Development-ready assets may qualify for advanced growth paths. Fees apply only after review and classification:</p>
 
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Development Status</th>
-                        <th>CER Potential</th>
+                        <th>Development Status Framework</th>
+                        <th>CER Potential Range</th>
+                        <th>Annual Registry Contribution</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td></tr>
-                    <tr><td><strong>Watchlist</strong></td><td>101–500</td></tr>
-                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td></tr>
-                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td></tr>
-                </tbody>
-            </table>
-
-            <!-- SECTION 5: REGISTRATION & DEVELOPMENT FEES -->
-            <h2>4. Registration & Development Fees</h2>
-            <p>Development-ready assets may qualify for advanced growth paths. Fees apply only after review and classification:</p>
-            
-            <table class="govuk-table">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Fee</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td><strong>Registered Asset</strong></td><td><span class="status-tag">Free</span></td></tr>
-                    <tr><td><strong>Watchlist</strong></td><td><span class="status-tag">Free</span></td></tr>
-                    <tr><td><strong>Starter Development</strong></td><td><strong>₹3,999</strong></td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,999</strong></td></tr>
-                    <tr><td><strong>Institutional Development</strong></td><td><strong>₹11,999</strong></td></tr>
+                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td>101–500</td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td><td><strong>₹3,999</strong></td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td><td><strong>₹7,999</strong></td></tr>
+                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td><td><strong>₹11,999</strong></td></tr>
                 </tbody>
             </table>
             <div class="table-note-sub">
                 Includes 12 months of registry participation, asset tracking, development screening and opportunity assessment.
             </div>
 
-            <!-- SECTION 6: LIVE IMPACT TRACKER (FORCED 4 CARDS IN A SINGLE LINE) -->
-            <h2>5. Live Impact Tracker</h2>
+            <!-- SECTION 6: LIVE IMPACT TRACKER WITH MERGED SPECIFICATIONS -->
+            <h2>4. Live Impact Tracker</h2>
             <p>Building 100 Million Tons together with asset owners across the country:</p>
             
             <div class="govuk-grid-4col">
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1,200+</div>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1,158+</div>
                         <h3 style="font-size: 16px;">Participants</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
                         <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">800+</div>
-                        <h3 style="font-size: 16px;">Assets Identified</h3>
+                        <h3 style="font-size: 16px;">Assets</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">17,000+</div>
-                        <h3 style="font-size: 16px;">Annual tCO₂e Pipeline</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">20,426+</div>
+                        <h3 style="font-size: 16px;">Climate Impact (tCO₂e)</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
@@ -286,8 +289,19 @@
                 </div>
             </div>
 
+            <!-- Custom 100M Ton Progress Tracker Element -->
+            <div class="progress-wrapper">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-family: Arial, sans-serif;">
+                    <span style="font-size: 18px; color: #003020;">Mission Target Tracker: 100M Tons by 2030</span>
+                    <span style="font-size: 16px; color: #b01a1a;">Still To Go: 99,983,000 tCO₂e</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
             <!-- SECTION 7: WHAT HAPPENS NEXT? -->
-            <h2>6. What Happens Next?</h2>
+            <h2>5. What Happens Next?</h2>
             <p>Our process is simple and transparent, designed to get you recognized fast without overwhelming technical hurdles:</p>
             
             <ol class="govuk-list--number" style="margin-bottom: 40px;">
@@ -298,9 +312,9 @@
                 <li><strong>Opportunity Review:</strong> Explore future options to track and grow your returns.</li>
             </ol>
 
-            <h2>7. Ready To Register Your Environmental Assets?</h2>
+            <h2>6. Ready To Register Your Environmental Assets?</h2>
             <p>Take two minutes to claim your spot in the national movement and secure your project documentation.</p>
-            <a href="https://forms.gle/x1zLpepRCAyr39G49" class="govuk-button" style="margin-top: 10px; margin-bottom: 40px;">Start Free Asset Registration</a>
+            <a href="https://forms.gle/TLneLXJkDMKMTDA99" class="govuk-button" style="margin-top: 10px; margin-bottom: 40px;">Start Free Asset Registration</a>
         </main>
 
         <p style="font-size: 16px; color: #505a5f;">Framework Support Node: <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
