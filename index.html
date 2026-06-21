@@ -53,7 +53,7 @@
         .govuk-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 30px 0;
+            margin: 30px 0 10px 0;
             font-size: 16px;
         }
         .govuk-table th {
@@ -69,12 +69,22 @@
             text-align: left;
         }
         .status-tag {
-            background-color: #00703c;
-            color: #ffffff;
+            background-color: #e8f5e9;
+            color: #2d6a4f;
             font-weight: 700;
-            padding: 4px 8px;
+            padding: 4px 12px;
             font-size: 14px;
             text-transform: uppercase;
+            border-radius: 20px;
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+        .table-note-sub {
+            font-size: 15px;
+            color: #505a5f;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-style: italic;
         }
 
         /* Forced 4-Column Row Grid Layout */
@@ -135,19 +145,22 @@
             margin-bottom: 15px;
             padding-left: 10px;
         }
-
-        footer {
-            margin-top: 60px;
-            border-top: 1px solid #bfc1c3;
-            padding: 30px 0;
-            font-size: 16px;
-            color: #505a5f;
-        }
-        footer a { color: #1d70b8; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
+
+    <!-- EARTH CARBON FOUNDATION UNIFIED NAV BAR -->
+    <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 20px;">
+        <div style="max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif;">
+            <a href="https://earthcarbonfoundation.org" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 1.2rem; font-weight: 700; color: #1b4332;">Earth Carbon Foundation</span>
+            </a>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="https://earthcarbonfoundation.org" style="color: #2d6a4f; text-decoration: none; font-weight: 600; font-size: 0.95rem;">← Back to Hub</a>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV BAR -->
 
     <div class="govuk-header">
         <div class="govuk-header__title">AtmanirbharNow</div>
@@ -219,9 +232,9 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 5: REGISTRATION & DEVELOPMENT FEES (WITH UPDATED PROGRAM DESCRIPTION) -->
+            <!-- SECTION 5: REGISTRATION & DEVELOPMENT FEES -->
             <h2>4. Registration & Development Fees</h2>
-            <p>Development-ready assets may qualify for advanced growth paths. Includes 12 months of registry participation, asset tracking and development screening. Fees apply only after review and classification:</p>
+            <p>Development-ready assets may qualify for advanced growth paths. Fees apply only after review and classification:</p>
             
             <table class="govuk-table">
                 <thead>
@@ -234,38 +247,41 @@
                     <tr><td><strong>Registered Asset</strong></td><td><span class="status-tag">Free</span></td></tr>
                     <tr><td><strong>Watchlist</strong></td><td><span class="status-tag">Free</span></td></tr>
                     <tr><td><strong>Starter Development</strong></td><td><strong>₹3,999</strong></td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,799</strong></td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td><strong>₹3,999</strong></td></tr>
                     <tr><td><strong>Institutional Development</strong></td><td><strong>₹11,999</strong></td></tr>
                 </tbody>
             </table>
+            <div class="table-note-sub">
+                Includes 12 months of registry participation, asset tracking, development screening and opportunity assessment.
+            </div>
 
             <!-- SECTION 6: LIVE IMPACT TRACKER (FORCED 4 CARDS IN A SINGLE LINE) -->
             <h2>5. Live Impact Tracker</h2>
-            <p>Building 100 Million Tons By 2030 together with asset owners across the country:</p>
+            <p>Building 100 Million Tons together with asset owners across the country:</p>
             
             <div class="govuk-grid-4col">
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1,000+</div>
-                        <h3 style="font-size: 16px;">Registered Assets</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1,200+</div>
+                        <h3 style="font-size: 16px;">Participants</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">250+</div>
-                        <h3 style="font-size: 16px;">Participating Organizations</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">800+</div>
+                        <h3 style="font-size: 16px;">Assets Identified</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">500,000+</div>
-                        <h3 style="font-size: 16px;">CER Pipeline</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">17,000+</div>
+                        <h3 style="font-size: 16px;">Annual tCO₂e Pipeline</h3>
                     </div>
                 </div>
                 <div class="govuk-card">
                     <div>
-                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1</div>
-                        <h3 style="font-size: 16px;">Countries Represented</h3>
+                        <div class="price-tag" style="font-size: 32px; margin-bottom: 5px; color: #00703c;">1+</div>
+                        <h3 style="font-size: 16px;">States Covered</h3>
                     </div>
                 </div>
             </div>
@@ -284,14 +300,30 @@
 
             <h2>7. Ready To Register Your Environmental Assets?</h2>
             <p>Take two minutes to claim your spot in the national movement and secure your project documentation.</p>
-            <a href="https://forms.gle/TLneLXJkDMKMTDA99" class="govuk-button" style="margin-top: 10px;">Start Free Asset Registration</a>
+            <a href="https://forms.gle/TLneLXJkDMKMTDA99" class="govuk-button" style="margin-top: 10px; margin-bottom: 40px;">Start Free Asset Registration</a>
         </main>
 
-        <footer>
-            <p>Framework Support Node: <a href="mailto:admin@earthcarbonfoundation.org">admin@earthcarbonfoundation.org</a></p>
-            <p style="margin-top: 10px; font-size: 14px; color: #505a5f;">Please reference our "Institutional Privacy & Data Protection Policy" and "Registry Master Terms of Service" verbatim for data protection rights under the DPDP Act 2023.</p>
-        </footer>
+        <p style="font-size: 16px; color: #505a5f;">Framework Support Node: <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
+        <p style="margin-top: 10px; margin-bottom: 60px; font-size: 14px; color: #505a5f;">Please reference our "Institutional Privacy & Data Protection Policy" and "Registry Master Terms of Service" verbatim for data protection rights under the DPDP Act 2023.</p>
     </div>
+
+    <!-- EARTH CARBON FOUNDATION MASTER BRAND FOOTER -->
+    <footer style="background-color: #081c15; color: white; text-align: center; padding: 60px 20px; font-family: Arial, sans-serif; font-size: 0.95rem; border-top: 5px solid #2d6a4f; width: 100%;">
+        <div style="font-size: 1.4rem; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 6px; color: #ffffff;">Earth Carbon Foundation</div>
+        <div style="color: #b7e4c7; font-size: 0.95rem; margin-bottom: 35px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;">Measure. Register. Develop. Grow.</div>
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
+            <a href="https://atmanirbharnow.org" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">AtmanirbharNow</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://time2repay.com" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Time2Repay</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://100mtons.com" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">100M Tons</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://registryearth.org" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Climate Asset Registry</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://earthcarbonfoundation.org/campus" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Atmanirbhar Campus Index</a>
+        </div>
+    </footer>
+    <!-- END MASTER BRAND FOOTER -->
 
 </body>
 </html>
