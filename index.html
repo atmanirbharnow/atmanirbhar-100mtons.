@@ -28,18 +28,18 @@
             letter-spacing: -0.5px;
         }
 
-        /* Layout Container */
+        /* Layout Container - Updated to be wider than 960px but less than the main hub's 1400px */
         .govuk-width-container {
-            max-width: 960px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 30px 15px;
         }
 
         /* Typography Hierarchy */
-        h1 { font-size: 40px; font-weight: 700; margin-bottom: 25px; line-height: 1.1; }
+        h1 { font-size: 40px; font-weight: 700; margin-bottom: 25px; line-height: 1.1; white-space: nowrap; }
         h2 { font-size: 28px; font-weight: 700; margin-top: 40px; margin-bottom: 20px; border-bottom: 4px solid #0b0c0c; padding-bottom: 5px; }
         h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
-        p { font-size: 19px; margin-bottom: 20px; max-width: 750px; }
+        p { font-size: 19px; margin-bottom: 20px; max-width: 850px; }
         
         /* Notification Banner */
         .govuk-banner {
@@ -95,7 +95,10 @@
             margin: 35px 0;
         }
         
-        /* Responsive fallback to avoid horizontal overflow on screens below 800px */
+        /* Responsive fallback to avoid horizontal overflow on screens below 1100px */
+        @media (max-width: 1100px) {
+            h1 { white-space: normal; }
+        }
         @media (max-width: 800px) {
             .govuk-grid-4col {
                 grid-template-columns: repeat(2, 1fr);
@@ -173,7 +176,7 @@
 
     <!-- EARTH CARBON FOUNDATION UNIFIED NAV BAR -->
     <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 20px;">
-        <div style="max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif;">
+        <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif;">
             <a href="https://earthcarbonfoundation.org" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 1.2rem; font-weight: 700; color: #1b4332;">Earth Carbon Foundation</span>
             </a>
@@ -185,7 +188,7 @@
     <!-- END NAV BAR -->
 
     <div class="govuk-header">
-        <div class="govuk-header__title">AtmanirbharNow</div>
+        <div class="govuk-header__title" style="max-width: 1100px; margin: 0 auto;">AtmanirbharNow</div>
     </div>
 
     <div class="govuk-width-container">
@@ -331,8 +334,8 @@
             <a href="https://forms.gle/16BcmVvyBXiojxXaA" class="govuk-button" style="margin-top: 10px; margin-bottom: 40px;">Start Free Asset Registration</a>
         </main>
 
-        <p style="font-size: 16px; color: #505a5f;">Framework Support Node: <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
-        <p style="margin-top: 10px; margin-bottom: 60px; font-size: 14px; color: #505a5f;">Please reference our "Institutional Privacy & Data Protection Policy" and "Registry Master Terms of Service" verbatim for data protection rights under the DPDP Act 2023.</p>
+        <p style="font-size: 16px; color: #505a5f; max-width: 1100px; margin: 0 auto 10px auto;">Framework Support Node: <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
+        <p style="margin: 0 auto 60px auto; font-size: 14px; color: #505a5f; max-width: 1100px;">Please reference our "Institutional Privacy & Data Protection Policy" and "Registry Master Terms of Service" verbatim for data protection rights under the DPDP Act 2023.</p>
     </div>
 
     <!-- EARTH CARBON FOUNDATION MASTER BRAND FOOTER -->
